@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+
+p{
+    color: hsl(229, 8%, 60%);
+}
+
+.btn{
+    @apply p-3 rounded-lg font-bold shadow-lg hover:-translate-y-1 transition duration-200
+}
+
+.btn-blue{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    /* background-image: url(); */
+}
+
+.btn-white{
+    background-color: hsl(210, 4%, 90%);
+    color: hsl(229, 31%, 21%);
+}
+
+.btn-red{
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+}
+
+hr{
+    @apply w-[90%] mx-auto
+}
+
+.feature-active{
+    /* @apply border border-b-2 border-cyan-700 */
+}
+
+h1, h2, h3, h4{
+    color:  hsl(229, 31%, 21%);
+}
+
+section{
+    @apply mb-10
+}
+
+.card{
+    @apply grid justify-items-center mx-auto gap-x-5 shadow-xl mb-14 w-[80%] md:w-auto md:px-8
+}
+

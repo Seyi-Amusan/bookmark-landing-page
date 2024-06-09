@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="assets/output.css">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <script src="index.js" type="module" defer></script>
+
+</head>
+<body>
+
+
+  <header class="p-6 mb-20 relative">
+    <div class="flex justify-between items-center mb-6 md:mb-16">
+      <img src="images/logo-bookmark.svg" alt="">
+      <img class="md:hidden hamburger right-6 absolute cursor-pointer" src="images/icon-hamburger.svg" alt="">
+      <nav>
+        <div style="background-color: hsla(229, 31%, 21%, .9);" class="mobile-nav hidden h-screen w-screen absolute z-10 left-0 top-0">
+          <div class="grid gap-y-8 jusitfy-items-center text-center justify-center mt-20">
+            <img src="images/icon-close.svg" class="justify-self-center icon-close cursor-pointer" alt="">
+            <p class="text-white font-medium text-xl tracking-wider">FEATURES</p>
+            <p class="text-white font-medium text-xl tracking-wider">PRICING</p>
+            <p class="text-white font-medium text-xl tracking-wider">CONTACT</p>
+            <button class="btn border-white border-2 text-white">LOGIN</button>
+          </div>
+        </div>
+        <div class="hidden md:grid grid-flow-col gap-x-8 items-center">
+          <p>FEATURES</p>
+          <p>PRICING</p>
+          <p>CONTACT</p>
+          <button class="btn btn-red">LOGIN</button>
+        </div>
+      </nav>
+    </div>
+
+    <div class=" md:grid grid-cols-2 items-center">
+      <div class="md:order-2">
+        <img src="images/illustration-hero.svg" alt="">
+        <img src="images/" alt="">
+      </div>
+      <div class="text-center md:text-start md:order-1 p-2 grid gap-y-5 md:gap-y-3 lg:gap-y-5">
+        <h1 class="text-3xl font-bold">A Simple Bookmark Manager</h1>
+        <p class="">A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="flex justify-evenly md:justify-start">
+          <button class="btn btn-blue md:me-4">Get it on Chrome</button>
+          <button class="btn btn-white">Get it on firefox</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="text-center">
+    <section>
+      <div class="text-center py-2 px-4 mb-5 md:w-[50%] lg:w-[40%] mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+  
+      <div class="grid grid-flow-row md:grid-flow-col gap-4 md:w-[85%] lg:w-[65%] mx-auto text-xl font-medium mb-16">
+          <hr class="feature-active md:none">
+          <p class="tab">Simple Bookmarking</p>
+          <hr class="md:none">
+          <p class="tab">Speedy Searching</p>
+          <hr class="md:none">
+          <p class="tab">Easy Sharing</p>
+          <hr class="md:none">
+          <!-- <hr class="w-0 md:w-full"> -->
+      </div>
+  
+      <div class="target grid md:gap-x-5 md:grid-flow-col md:justify-items-center md:items-center">
+        <img class="w-[85%] md:w-full mx-auto mb-9" src="images/illustration-features-tab-1.svg" alt="">
+        <div class="text-center w-[85%] mx-auto p-2 mb-5">
+          <h3 class="text-3xl font-medium mb-4">Bookmark in one click</h3>
+          <p class="mb-4 ">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.
+          </p>
+          <button class="btn btn-blue">More Info</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+
+      <div class="text-center py-2 px-4 mb-5 md:w-[50%] lg:w-[40%] mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">Download the extension</h2>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+
+      <div class="md:grid grid-flow-col md:w-screen gap-x-10 justify-center md:mb-20">
+        <div class="card">
+          <img class="mb-7" src="images/logo-chrome.svg" alt="">
+          <h4 class="font-bold text-xl mb-5">Add to Chrome</h4>
+          <p class="mb-9">Minimum version 62</p>
+          <hr class="mb-5">
+          <button class="btn btn-blue mb-7">Add & Install Extension</button>
+        </div>
+
+        <div class="card md:translate-y-10">
+          <img class="mb-7" src="images/logo-firefox.svg" alt="">
+          <h4 class="font-bold text-xl mb-5">Add to Firefox</h4>
+          <p class="mb-9">Minimum version 55</p>
+          <hr class="mb-5">
+          <button class="btn btn-blue mb-7">Add & Install Extension</button>
+        </div>
+
+        <div class="card md:translate-y-20">
+          <img class="mb-7" src="images/logo-opera.svg" alt="">
+          <h4 class="font-bold text-xl mb-5">Add to Opera</h4>
+          <p class="mb-9">Minimum version 56</p>
+          <hr class="mb-5">
+          <button class="btn btn-blue mb-7">Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center py-2 px-4 mb-10 md:w-[50%] lg:w-[40%] mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <!-- ACcCORDIOn -->
+
+    <button class="btn btn-blue">More Info</button>
+    </section>
+  </main>
+
+
+  <footer>
+    <section style="background-color: hsl(231, 69%, 60%);" class="py-16 px-9 grid justify-items-center gap-y-5 mb-0">
+      <p class="text-white tracking-widest">35,000+ ALREADY JOINED</p>
+      <p class="text-white text-2xl font-semibold text-center md:w-[50%] lg:w-[40%] mx-auto">Stay up-to-date with what we’re doing</p>
+      <div class="grid gap-4 w-full md:w-[50%] mx-auto justify-items-center md:grid-flow-col">
+        <input type="email" class="w-[90%]  p-3 rounded-lg" placeholder="Enter your email address">
+        <button class="btn btn-red w-[90%]">Contact Us</button>
+      </div>
+    </section>
+
+    <section style="background-color: hsl(229, 31%, 21%);" class="py-16 px-9 grid justify-items-center gap-y-5 mb-0 md:grid-flow-col md:items-start">
+      <img src="images/logo-bookmark-white.svg" class="mb-8" alt="">
+      <nav class="grid gap-y-10  md:grid-flow-col md:gap-x-8 justify-items-center mb-8">
+        <p class="text-white">FEATURES</p>
+        <p class="text-white">PRICING</p>
+        <p class="text-white">CONTACT</p>
+      </nav>
+      <div class="flex mb-8">
+        <img src="images/icon-facebook.svg" alt="" class="me-7">
+        <img src="images/icon-twitter.svg" alt="">
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
