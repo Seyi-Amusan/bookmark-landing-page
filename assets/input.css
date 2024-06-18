@@ -4,11 +4,13 @@
 
 p{
     color: hsl(229, 8%, 60%);
+    @apply text-xl
 }
 
 .btn{
     @apply p-3 rounded-lg font-bold shadow-lg hover:-translate-y-1 transition duration-200
 }
+
 
 .btn-blue{
     background-color: hsl(231, 69%, 60%);
@@ -30,8 +32,8 @@ hr{
     @apply w-[90%] mx-auto
 }
 
-.feature-active{
-    /* @apply border border-b-2 border-cyan-700 */
+.active{
+    @apply bg-red-500 h-1 w-36 text-center
 }
 
 h1, h2, h3, h4{
@@ -43,6 +45,21 @@ section{
 }
 
 .card{
-    @apply grid justify-items-center mx-auto gap-x-5 shadow-xl mb-14 w-[80%] md:w-auto md:px-8
+    @apply grid justify-items-center mx-auto gap-x-5 shadow-xl mb-14 max-w-[80%] min-w-[18rem] md:px-8
 }
 
+.accordion-item{
+    @apply border-b border-gray-100 text-start
+}
+
+.accordion-header{
+    @apply  p-4 cursor-pointer hover:bg-gray-200 text-xl flex justify-between items-center ;
+}
+
+.accordion-content {
+    @apply max-h-0 overflow-hidden;
+    transition: max-height 0.5s ease;
+}
+.accordion-content.show {
+    @apply m-4 max-h-[100px]
+}
