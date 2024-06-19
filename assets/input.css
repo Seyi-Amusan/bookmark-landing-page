@@ -61,5 +61,12 @@ section{
     transition: max-height 0.5s ease;
 }
 .accordion-content.show {
-    @apply m-4 max-h-[100px]
+    @apply m-4 max-h-[15rem]
+}
+
+.caret-down{
+    @apply transform rotate-0
+}
+.caret-up{
+    @apply transform rotate-180
 }
