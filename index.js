@@ -40,7 +40,10 @@ tabs.forEach((tab, index) => {
 headers.forEach(header => {
     header.addEventListener('click', () => {
         const content = header.nextElementSibling;
+        const caret = header.lastElementChild
 
         content.classList.toggle('show');
+        caret.classList.toggle('caret-down')
+        caret.classList.toggle('caret-up')
     });
 });
