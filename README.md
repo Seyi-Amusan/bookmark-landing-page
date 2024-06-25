@@ -50,5 +50,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Seyi-Amusan](https://seyi-amusan.github.io/portfolio)
 - Frontend Mentor - [@Seyi-Amusan](https://www.frontendmentor.io/profile/Seyi-Amusan)
